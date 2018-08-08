@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: dev
+  http:
+    encoding: 
+      charset: UTF-8
+      enabled: true
+      force: true
+  messages:
+    encoding: UTF-8
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+server:
+  tomcat:
+    uri-encoding: UTF-8 
+mybatis:
+  type-aliases-package: com.example.demo.model
+  mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+crud:
+  packageScan: com.example
+
+
+
+      
